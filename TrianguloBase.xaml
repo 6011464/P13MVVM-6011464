@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica13MVVM_6011464.TrianguloBase"
+             Title="TrianguloBase">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="https://i.pinimg.com/736x/ee/c7/27/eec72743fdc81047dd4398017b87b1ca.jpg"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Entry Text="{Binding PrimerLado1}" 
+                   Placeholder="Ingresa el primer lado"
+                   Keyboard="Numeric" />
+            <Entry Text="{Binding SegundoLado2}" 
+                   Placeholder="Ingresa el segundo lado"
+                   Keyboard="Numeric" />
+            <Entry Text="{Binding TercerLado3}" 
+                   Placeholder="Ingresa el tercer lado"
+                   Keyboard="Numeric" />
+            <Label Text="{Binding MensajedelArea}" 
+                   FontSize="24" 
+                   HorizontalOptions="Center" />
+
+            <Button
+                x:Name="BotonCalcular"
+                Text="Calcula"
+                SemanticProperties.Hint="Calcula el área del triángulo"
+                Command="{Binding CalculoMagicoCommand}"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

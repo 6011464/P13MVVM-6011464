@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica13MVVM_6011464.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="https://cdn-icons-png.flaticon.com/512/10358/10358224.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+
+            <Button
+                x:Name="CounterBtn1"
+                Text="Ejercicio1" 
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+     <Button
+       x:Name="CounterBtn2"
+       Text="Ejercicio2" 
+       Clicked="OnCounterClicked2"
+       HorizontalOptions="Fill" />
+
+     <Button
+       x:Name="CounterBtn3"
+       Text="Ejercicio3" 
+       Clicked="OnCounterClicked3"
+       HorizontalOptions="Fill" />
+
+      <Button
+       x:Name="CounterBtn4"
+       Text="Ejercicio4" 
+       Clicked="OnCounterClicked4"
+       HorizontalOptions="Fill" />
+      <Button
+       x:Name="CounterBtn5"
+       Text="Ejercicio5" 
+       Clicked="OnCounterClicked5"
+       HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

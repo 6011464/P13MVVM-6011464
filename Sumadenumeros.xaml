@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica13MVVM_6011464.Sumadenumeros"
+             Title="Sumadenumeros">
+    <ScrollView>
+        <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Center">
+
+            <Image
+            Source="https://previews.123rf.com/images/piren/piren1703/piren170301451/74445352-el-signo-m%C3%A1s-en-un-fondo-blanco.jpg"
+            SemanticProperties.Description="¡El bot de dot net está listo para calcular áreas de triángulos!"
+            HeightRequest="200"
+            HorizontalOptions="Center" />
+
+            <Entry Text="{Binding NumeroUno}" 
+                   Placeholder="Ingresa el primer número" 
+                   Keyboard="Numeric" />
+            <Entry Text="{Binding NumeroDos}" 
+                   Placeholder="Ingresa el segundo número" 
+                   Keyboard="Numeric" />
+            <Label Text="{Binding Resultado}" 
+                   FontSize="24" 
+                   HorizontalOptions="Center" />
+
+            <Button
+                Text="Calcular Suma"
+                SemanticProperties.Hint="Calcula la suma de los números"
+                Command="{Binding CalcularSumaCommand}"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
